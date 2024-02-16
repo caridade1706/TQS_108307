@@ -30,7 +30,7 @@ class BoundedSetOfNaturalsTest {
         setA = setB = setC = null;
     }
 
-    @Disabled("TODO revise test logic")
+    // @Disabled("TODO revise test logic")
     @Test
     public void testAddElement() {
 
@@ -38,18 +38,39 @@ class BoundedSetOfNaturalsTest {
         assertTrue(setA.contains(99), "add: added element not found in set.");
         assertEquals(1, setA.size());
 
-        setB.add(11);
-        assertTrue(setB.contains(11), "add: added element not found in set.");
-        assertEquals(7, setB.size(), "add: elements count not as expected.");
+        // setB.add(11);
+        assertThrows(IllegalArgumentException.class, () -> setB.add(11), "add: adding an element already in the set should throw an exception.");
+        assertFalse(setB.contains(11), "add: added element not found in set.");
+        assertNotEquals(7, setB.size(), "add: elements count not as expected.");
     }
 
-    @Disabled("TODO revise to test the construction from invalid arrays")
+    // @Disabled("TODO revise to test the construction from invalid arrays")
     @Test
     public void testAddFromBadArray() {
         int[] elems = new int[]{10, -20, -30};
 
         // must fail with exception
         assertThrows(IllegalArgumentException.class, () -> setA.add(elems));
+    }
+
+    @Test
+    public void testAddDuplicate() {
+        setA = new BoundedSetOfNaturals(3);
+        setA.add(99);
+        assertThrows(IllegalArgumentException.class, () -> setA.add(99), "add duplicate: duplicate element added.");
+    }
+
+    @Test
+    public void testAddNonNatural() {
+        assertThrows(IllegalArgumentException.class, () -> setA.add(0), "non natural element add: non natural element added.");
+    }
+
+    @Test
+    public void testIntersection() {
+        assertTrue(setB.intersects(BoundedSetOfNaturals.fromArray(new int[]{20, 30, 40})));
+        assertFalse(setB.intersects(BoundedSetOfNaturals.fromArray(new int[]{20, 30, 45})));
+        assertFalse(setC.intersects(setB));
+        assertTrue(setB.intersects(setC));
     }
 
 
