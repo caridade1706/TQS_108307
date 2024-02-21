@@ -18,10 +18,10 @@ mvn clean test jacoco:report
 ```
 
 Before
-![overview_before](./prints/Before1.png.png)
-![methods_before](./prints/Before2.png.png)
+![overview_before](./prints/Before1.png)
+![methods_before](./prints/Before2.png)
 
 After
-![overview_after](./prints/After1.png.png)
-![methods_after](./prints/After2.png.png)
+![overview_after](./prints/After1.png)
+![methods_after](./prints/After2.png)
 
