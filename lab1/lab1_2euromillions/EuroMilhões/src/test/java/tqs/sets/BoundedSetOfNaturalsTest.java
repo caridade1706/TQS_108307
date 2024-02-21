@@ -73,5 +73,22 @@ class BoundedSetOfNaturalsTest {
         assertTrue(setB.intersects(setC));
     }
 
+    @Test 
+    public void testEquals(){
+        assertEquals(setA, setA, "equals: set should be equal to itself");
+        assertNotEquals(setA, setB, "equals: set should not be equal to another set");
+
+        assertNotEquals(setA, null, "equals: set should not be equal to null");
+
+        assertNotEquals(setB, 20);
+
+    }
+
+    @Test
+    public void testHashCode(){
+        assertEquals(setA.hashCode(), setA.hashCode(), "hashCode: hash code of the same set should be the same");
+        assertNotEquals(setB.hashCode(), setA.hashCode(), "hashCode: hash code of the same set shouldn't be the same");
+    }
+
 
 }
