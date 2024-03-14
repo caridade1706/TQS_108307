@@ -40,12 +40,6 @@ public class CalculatorSteps {
         calc.push("*");
     }
 
-    @When("I divide {int} by zero")
-    public void divideByZero(int arg1) {
-        calc.push(arg1);
-        calc.push(0);
-        calc.push("/");
-    }
 
     @When("I divide {int} by {int}") 
     public void divide(int arg1, int arg2) {

@@ -25,6 +25,6 @@ Feature: Basic Arithmetic
     Then the result is 15
 
   Scenario: Division by zero
-    When I divide 15 by zero
+    When I divide 15 by 0
     Then the result is an error
 
