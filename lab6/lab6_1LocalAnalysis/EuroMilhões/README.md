@@ -12,7 +12,6 @@ mvn clean verify sonar:sonar   -Dsonar.projectKey=euromilhoes   -Dsonar.projectN
 My project passed the defined quality gate, with a total of 0 bugs, 0 vulnerabilities and 1 Security Hotspot
 
 | Issue              | Problem description                                          | How to solve                                                 |
-| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Security Hotspot   | Dip.java the use of `new Random()` is not secured. | Make sure that using this pseudorandom number generator is safe here. |
+|------------------|------------------------------------------------------------|------------------------------------------------------------|
 | Code Smell (major) | Refactor the code in order to not assign to this loop counter from within the loop body. | Increment the loop counter on the definition of the for loop. |
 
