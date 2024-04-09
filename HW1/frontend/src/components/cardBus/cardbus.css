@@ -1,0 +1,66 @@
+.bus-card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    align-items: center;
+    margin: 10px 90px;
+  }
+  
+  .bus-timings {
+    display: flex;
+  }
+  
+  .bus-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .bus-line-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+  }
+  
+  .bus-line {
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  .bus-duration, .bus-direct {
+    background-color: #fff;
+    padding: 0 5px;
+    z-index: 1;
+  }
+  
+  .bus-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .bus-class-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .booking-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  

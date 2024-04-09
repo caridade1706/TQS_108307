@@ -1,0 +1,25 @@
+plate,seats,company,model,year
+ABC123,50,Transport Co,Model X,2015
+DEF456,40,Shuttle Corp,Model Y,2018
+GHI789,60,Fast Travel,Model Z,2020
+JKL012,55,Green Wheels,Model A,2016
+MNO345,42,Blue Lines,Model B,2019
+PQR678,65,Red Tours,Model C,2021
+STU901,48,Yellow Buses,Model D,2017
+VWX678,50,Example Co,Model F,2022
+YZA567,45,Travel Express,Model G,2023
+ZAB123,55,Travel Solutions,Model H,2024
+BCD456,52,Ultimate Travel,Model I,2025
+CDE789,50,Express Lines,Model J,2026
+DEF123,40,Future Transport,Model K,2027
+EFG456,60,NextGen Travel,Model L,2028
+FGH789,55,Eco Rides,Model M,2029
+GHI012,42,Speed Shuttle,Model N,2030
+HIJ345,65,Luxury Commute,Model O,2031
+IJK678,48,City Transit,Model P,2032
+JKL901,60,Regional Transit,Model Q,2033
+KLM678,50,InterCity Transport,Model R,2034
+LMN567,45,Metro Rides,Model S,2035
+MNO123,55,Urban Explorer,Model T,2036
+NOP456,52,Rural Routes,Model U,2037
+OPQ789,50,Pioneer Travels,Model V,2038

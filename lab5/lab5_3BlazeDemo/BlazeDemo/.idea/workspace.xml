@@ -5,31 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417adc5-5341-4e5e-8e26-93a2a1b4425a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab3/lab3_2Cars/CarService/src/test/java/tqs/example/CarControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab3/lab3_2Cars/CarService/src/test/java/tqs/example/CarControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab3/lab3_2Cars/CarService/src/test/java/tqs/example/CarManagerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab3/lab3_2Cars/CarService/src/test/java/tqs/example/CarManagerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tqs/example/BlazeDemoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tqs/example/BlazeDemoSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2dug8CmBnv3ljBAwgEG9jmpP3iT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-25a4bffe" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -42,6 +56,11 @@
       <option name="presentableId" value="Default" />
       <updated>1710863217104</updated>
       <workItem from="1710863218540" duration="4000" />
+      <workItem from="1712220356138" duration="152000" />
+      <workItem from="1712220514923" duration="25000" />
+      <workItem from="1712220553338" duration="89000" />
+      <workItem from="1712582927145" duration="5000" />
+      <workItem from="1712615023569" duration="99000" />
     </task>
     <servers />
   </component>

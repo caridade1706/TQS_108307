@@ -40,7 +40,8 @@ public class CarControllerTest {
     private CarManagerService carManagerService;
 
     @BeforeEach
-    public void setUp() {}
+    public void setUp() {
+    }
 
     @Test
     public void whenPostCar_thenCreateCar() throws Exception {
@@ -51,9 +52,9 @@ public class CarControllerTest {
         String objectJson = new ObjectMapper().writeValueAsString(audi);
 
         mvc.perform(
-            post("/api/create")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(objectJson))
+                post("/api/create")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectJson))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.maker", is("Audi")))
                 .andExpect(jsonPath("$.model", is("A3")));
@@ -71,11 +72,11 @@ public class CarControllerTest {
         when(carManagerService.getAllCars()).thenReturn(allCars);
 
         mvc.perform(get("/api/cars")
-            .contentType(MediaType.APPLICATION_JSON))
-            .andExpect(status().isOk())
-            .andExpect(jsonPath("$", hasSize(2)))
-            .andExpect(jsonPath("$[0].maker", is(audi.getMaker())))
-            .andExpect(jsonPath("$[1].maker", is(bmw.getMaker())));
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(2)))
+                .andExpect(jsonPath("$[0].maker", is(audi.getMaker())))
+                .andExpect(jsonPath("$[1].maker", is(bmw.getMaker())));
 
         verify(carManagerService, times(1)).getAllCars();
     }
@@ -87,12 +88,12 @@ public class CarControllerTest {
         when(carManagerService.getCarDetails(anyLong())).thenReturn(Optional.of(audi));
 
         mvc.perform(get("/api/car/1")
-            .contentType(MediaType.APPLICATION_JSON))
-            .andExpect(status().isOk())
-            .andExpect(jsonPath("$.maker", is(audi.getMaker()))
-        );
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.maker", is(audi.getMaker())));
 
         verify(carManagerService, times(1)).getCarDetails(anyLong());
     }
+
     
 }

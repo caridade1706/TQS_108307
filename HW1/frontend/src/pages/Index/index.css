@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.dropdown-container {
+  margin-top: 20px;
+}
+
+.dropdown, .date-picker {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.find-routes-btn {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.find-routes-btn:hover {
+  background-color: #0056b3;
+}
