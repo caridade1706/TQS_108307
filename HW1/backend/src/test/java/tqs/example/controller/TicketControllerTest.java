@@ -54,7 +54,7 @@ class TicketControllerTest {
                 "123456789", "Rua do ISEP", "4200-072", "Porto",
                 "Visa", 123456789, 12, 2023, 123);
         Ticket ticket = new Ticket();
-        ticket.setId(UUID.randomUUID().toString());
+        ticket.setIdTicket(UUID.randomUUID().toString());
 
         when(routeService.isfull(any())).thenReturn(false);
         when(ticketService.createTicket(any(TicketDTO.class))).thenReturn(ticket);
@@ -65,7 +65,7 @@ class TicketControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(ticketJson))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.ticket", is(ticket.getId())));
+                .andExpect(jsonPath("$.ticket", is(ticket.getIdTicket())));
     
         verify(ticketService, times(1)).createTicket(any(TicketDTO.class));
     }
@@ -93,15 +93,15 @@ class TicketControllerTest {
     @Test
     void whenGetTicketById_thenReturnsTicket() throws Exception {
         Ticket ticket = new Ticket();
-        ticket.setId(UUID.randomUUID().toString());
+        ticket.setIdTicket(UUID.randomUUID().toString());
 
-        when(ticketService.getTicketById(ticket.getId())).thenReturn(ticket);
+        when(ticketService.getTicketById(ticket.getIdTicket())).thenReturn(ticket);
 
-        mvc.perform(get("/api/tickets/reservation/{id}", ticket.getId()))
+        mvc.perform(get("/api/tickets/reservation/{id}", ticket.getIdTicket()))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id", is(ticket.getId())));
+                .andExpect(jsonPath("$.idTicket", is(ticket.getIdTicket())));
 
-        verify(ticketService, times(1)).getTicketById(ticket.getId());
+        verify(ticketService, times(1)).getTicketById(ticket.getIdTicket());
     }
 
     @Test

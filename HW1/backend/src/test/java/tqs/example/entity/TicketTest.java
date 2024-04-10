@@ -26,30 +26,30 @@ class TicketTest {
         assertNotNull(ticket);
         
 
-        ticket.setId("d20ab270-7c81-4087-a7a6-259b0aOcc3ea");
-        ticket.setPerson(person);
-        ticket.setPersonid(0);
+        ticket.setIdTicket("d20ab270-7c81-4087-a7a6-259b0aOcc3ea");
+        ticket.setPersonTicket(person);
+        ticket.setPersonidTicket(0);
         route.setOcupation(route.getOcupation() - 1);
-        ticket.setRoute(route);
-        ticket.setRouteid(0);
-        ticket.setCardType("Visa");
-        ticket.setCardNumber(123456789);
-        ticket.setCardMonth(12);
-        ticket.setCardYear(2023);
-        ticket.setCardCvv(123);
+        ticket.setRouteTicket(route);
+        ticket.setRouteidTicket(0);
+        ticket.setCardTypeTicket("Visa");
+        ticket.setCardNumberTicket(123456789);
+        ticket.setCardMonthTicket(12);
+        ticket.setCardYearTicket(2023);
+        ticket.setCardCvvTicket(123);
 
     
 
-        assertEquals("d20ab270-7c81-4087-a7a6-259b0aOcc3ea", ticket.getId());
-        assertEquals(person, ticket.getPerson());
-        assertEquals(0, ticket.getPersonid());
-        assertEquals(route, ticket.getRoute());
-        assertEquals(0, ticket.getRouteid());
-        assertEquals("Visa", ticket.getCardType());
-        assertEquals(123456789, ticket.getCardNumber());
-        assertEquals(12, ticket.getCardMonth());
-        assertEquals(2023, ticket.getCardYear());
-        assertEquals(123, ticket.getCardCvv());
+        assertEquals("d20ab270-7c81-4087-a7a6-259b0aOcc3ea", ticket.getIdTicket());
+        assertEquals(person, ticket.getPersonTicket());
+        assertEquals(0, ticket.getPersonidTicket());
+        assertEquals(route, ticket.getRouteTicket());
+        assertEquals(0, ticket.getRouteidTicket());
+        assertEquals("Visa", ticket.getCardTypeTicket());
+        assertEquals(123456789, ticket.getCardNumberTicket());
+        assertEquals(12, ticket.getCardMonthTicket());
+        assertEquals(2023, ticket.getCardYearTicket());
+        assertEquals(123, ticket.getCardCvvTicket());
 
     }
 
@@ -58,16 +58,16 @@ class TicketTest {
 
         ticket = new Ticket("d20ab270-7c81-4087-a7a6-259b0aOcc3ea", "Visa", 123456789, 12, 2023, 123,0,0, person, route);
 
-        assertEquals("d20ab270-7c81-4087-a7a6-259b0aOcc3ea", ticket.getId());
-        assertEquals(person, ticket.getPerson());
-        assertEquals(0, ticket.getPersonid());
-        assertEquals(route, ticket.getRoute());
-        assertEquals(0, ticket.getRouteid());
-        assertEquals("Visa", ticket.getCardType());
-        assertEquals(123456789, ticket.getCardNumber());
-        assertEquals(12, ticket.getCardMonth());
-        assertEquals(2023, ticket.getCardYear());
-        assertEquals(123, ticket.getCardCvv());
+        assertEquals("d20ab270-7c81-4087-a7a6-259b0aOcc3ea", ticket.getIdTicket());
+        assertEquals(person, ticket.getPersonTicket());
+        assertEquals(0, ticket.getPersonidTicket());
+        assertEquals(route, ticket.getRouteTicket());
+        assertEquals(0, ticket.getRouteidTicket());
+        assertEquals("Visa", ticket.getCardTypeTicket());
+        assertEquals(123456789, ticket.getCardNumberTicket());
+        assertEquals(12, ticket.getCardMonthTicket());
+        assertEquals(2023, ticket.getCardYearTicket());
+        assertEquals(123, ticket.getCardCvvTicket());
         
 
     }

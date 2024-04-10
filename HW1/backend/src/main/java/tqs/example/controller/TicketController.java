@@ -42,7 +42,6 @@ public class TicketController {
 
     @PostMapping("/createreservation")
     public ResponseEntity<Object> reserveTicket(@RequestBody TicketDTO ticketDTO){
-        System.out.println(ticketDTO.getNameDTO());
         
         logger.info("Creating ticket");
         
@@ -59,7 +58,7 @@ public class TicketController {
         }
         else{
             Map<String, Object> response = new HashMap<>();
-            response.put("ticket", ticket.getId());
+            response.put("ticket", ticket.getIdTicket());
             logger.info("Ticket created");
             return ResponseEntity.ok(response);
         }    }

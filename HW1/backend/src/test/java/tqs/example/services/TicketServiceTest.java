@@ -54,7 +54,7 @@ class TicketServiceTest {
         ticketDTO = new TicketDTO();
         
 
-        Mockito.when(ticketRepository.findByTicketId(ticket.getId())).thenReturn(ticket);
+        Mockito.when(ticketRepository.findByTicketId(ticket.getIdTicket())).thenReturn(ticket);
         Mockito.when(personRepository.save(person)).thenReturn(person);
         Mockito.when(ticketRepository.save(ticket)).thenReturn(ticket);
         Mockito.when(routeRepository.findByRouteId(0)).thenReturn(route);
@@ -62,18 +62,18 @@ class TicketServiceTest {
 
     @Test
     void whenGetTicketById_thenTicketShouldBeFound() {
-        Ticket found = ticketServiceImpl.getTicketById(ticket.getId());
+        Ticket found = ticketServiceImpl.getTicketById(ticket.getIdTicket());
         assert(found != null);
-        assertEquals("d20ab270-7c81-4087-a7a6-259b0aOcc3ea", found.getId());
-        assertEquals("Visa", found.getCardType(), "Card type does not match");
-        assertEquals(123456789, found.getCardNumber(), "Card number does not match");
-        assertEquals(12, found.getCardMonth(), "Card month does not match");
-        assertEquals(2023, found.getCardYear(), "Card year does not match");
-        assertEquals(123, found.getCardCvv(), "Card CVV does not match");
-        assertEquals(ticket.getPerson(), found.getPerson(), "Person does not match");
-        assertEquals(0, found.getPersonid(), "Person ID does not match");
-        assertEquals(ticket.getRoute(), found.getRoute(), "Route does not match");
-        assertEquals(0, found.getRouteid(), "Route ID does not match");
+        assertEquals("d20ab270-7c81-4087-a7a6-259b0aOcc3ea", found.getIdTicket());
+        assertEquals("Visa", found.getCardTypeTicket(), "Card type does not match");
+        assertEquals(123456789, found.getCardNumberTicket(), "Card number does not match");
+        assertEquals(12, found.getCardMonthTicket(), "Card month does not match");
+        assertEquals(2023, found.getCardYearTicket(), "Card year does not match");
+        assertEquals(123, found.getCardCvvTicket(), "Card CVV does not match");
+        assertEquals(ticket.getPersonTicket(), found.getPersonTicket(), "Person does not match");
+        assertEquals(0, found.getPersonidTicket(), "Person ID does not match");
+        assertEquals(ticket.getRouteTicket(), found.getRouteTicket(), "Route does not match");
+        assertEquals(0, found.getRouteidTicket(), "Route ID does not match");
     }
 
     @Test
@@ -101,8 +101,8 @@ class TicketServiceTest {
         Ticket createdTicket = ticketServiceImpl.createTicket(ticketDTO);
         
         assertThat(createdTicket).isNotNull();
-        assertThat(createdTicket.getPerson().getId()).isEqualTo(person.getId());
-        assertThat(createdTicket.getRoute()).isEqualTo(route);
+        assertThat(createdTicket.getPersonTicket().getIdPerson()).isEqualTo(person.getIdPerson());
+        assertThat(createdTicket.getRouteTicket()).isEqualTo(route);
 
         verify(ticketRepository, times(1)).save(createdTicket);
 

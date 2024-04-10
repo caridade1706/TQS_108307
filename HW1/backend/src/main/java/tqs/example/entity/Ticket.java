@@ -50,83 +50,83 @@ public class Ticket {
     @JoinColumn(name = "routeid", referencedColumnName = "id", insertable = false, updatable = false)
     private Route route;
 
-    public String getId() {
+    public String getIdTicket() {
         return ticketId;
     }
 
-    public void setId(String ticketId) {
+    public void setIdTicket(String ticketId) {
         this.ticketId = ticketId;
     }
 
-    public String getCardType() {
+    public String getCardTypeTicket() {
         return cardType;
     }
 
-    public void setCardType(String cardType) {
+    public void setCardTypeTicket(String cardType) {
         this.cardType = cardType;
     }
 
-    public int getCardNumber() {
+    public int getCardNumberTicket() {
         return cardNumber;
     }
 
-    public void setCardNumber(int cardNumber) {
+    public void setCardNumberTicket(int cardNumber) {
         this.cardNumber = cardNumber;
     }
 
-    public int getCardMonth() {
+    public int getCardMonthTicket() {
         return cardMonth;
     }
 
-    public void setCardMonth(int cardMonth) {
+    public void setCardMonthTicket(int cardMonth) {
         this.cardMonth = cardMonth;
     }
 
-    public int getCardYear() {
+    public int getCardYearTicket() {
         return cardYear;
     }
 
-    public void setCardYear(int cardYear) {
+    public void setCardYearTicket(int cardYear) {
         this.cardYear = cardYear;
     }
 
-    public int getCardCvv() {
+    public int getCardCvvTicket() {
         return cardCvv;
     }
 
-    public void setCardCvv(int cardCvv) {
+    public void setCardCvvTicket(int cardCvv) {
         this.cardCvv = cardCvv;
     }
 
-    public Person getPerson() {
+    public Person getPersonTicket() {
         return person;
     }
 
-    public void setPerson(Person person) {
+    public void setPersonTicket(Person person) {
         this.person = person;
     }
 
-    public Route getRoute() {
+    public Route getRouteTicket() {
         return route;
     }
 
-    public void setRoute(Route route) {
+    public void setRouteTicket(Route route) {
         this.route = route;
     }
 
-    public int getPersonid() {
+    public int getPersonidTicket() {
         return personid;
     }
 
-    public void setPersonid(int personid) {
+    public void setPersonidTicket(int personid) {
         this.personid = personid;
     }
 
-    public int getRouteid() {
+    public int getRouteidTicket() {
         return routeid;
     }
 
-    public void setRouteid(int routeid) {
+    public void setRouteidTicket(int routeid) {
         this.routeid = routeid;
     }
     

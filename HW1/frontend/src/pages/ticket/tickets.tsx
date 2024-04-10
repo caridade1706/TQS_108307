@@ -89,27 +89,27 @@ const Tickets = () => {
                 {reservationDetails && (
                     <div className="reservation-details"  style={{marginTop: "20px"}}>
                         <h2>Reservation Details</h2>
-                        <p><strong>Bus:</strong> {reservationDetails.route.plateBus}</p>
-                        <p><strong>Origin:</strong> {reservationDetails.route.origin}</p>
-                        <p><strong>Destination:</strong> {reservationDetails.route.destination}</p>
-                        <p><strong>Date:</strong> {reservationDetails.route.date}</p>
-                        <p><strong>Departure Time:</strong> {reservationDetails.route.time}</p>
-                        <p><strong>Arrival Time:</strong> {reservationDetails.route.timeDestination}</p>
-                        <p><strong>Duration:</strong> {reservationDetails.route.duration} hours</p>
-                        <p><strong>Price:</strong> {((reservationDetails.route.price * exchangeRate).toFixed(2))} {selectedCurrency}</p>
-                        <p><strong>Occupation:</strong> {reservationDetails.route.ocupation} available seats</p>
+                        <p><strong>Bus:</strong> {reservationDetails.routeTicket.busPlate}</p>
+                        <p><strong>Origin:</strong> {reservationDetails.routeTicket.origin}</p>
+                        <p><strong>Destination:</strong> {reservationDetails.routeTicket.destination}</p>
+                        <p><strong>Date:</strong> {reservationDetails.routeTicket.date}</p>
+                        <p><strong>Departure Time:</strong> {reservationDetails.routeTicket.time}</p>
+                        <p><strong>Arrival Time:</strong> {reservationDetails.routeTicket.timeDestination}</p>
+                        <p><strong>Duration:</strong> {reservationDetails.routeTicket.duration} hours</p>
+                        <p><strong>Price:</strong> {((reservationDetails.routeTicket.price * exchangeRate).toFixed(2))} {selectedCurrency}</p>
+                        <p><strong>Occupation:</strong> {reservationDetails.routeTicket.ocupation} available seats</p>
                         <h2>Personal Information</h2>
-                        <p><strong>Name:</strong> {reservationDetails.person.name}</p>
-                        <p><strong>Email:</strong> {reservationDetails.person.email}</p>
-                        <p><strong>Phone:</strong> {reservationDetails.person.phone}</p>
-                        <p><strong>Address:</strong> {reservationDetails.person.address}</p>
-                        <p><strong>Zip:</strong> {reservationDetails.person.zip}</p>
-                        <p><strong>City:</strong> {reservationDetails.person.city}</p>
+                        <p><strong>Name:</strong> {reservationDetails.personTicket.namePerson}</p>
+                        <p><strong>Email:</strong> {reservationDetails.personTicket.emailPerson}</p>
+                        <p><strong>Phone:</strong> {reservationDetails.personTicket.phonePerson}</p>
+                        <p><strong>Address:</strong> {reservationDetails.personTicket.addressPerson}</p>
+                        <p><strong>Zip:</strong> {reservationDetails.personTicket.zipPerson}</p>
+                        <p><strong>City:</strong> {reservationDetails.personTicket.cityPerson}</p>
                         <h2>Payment Information</h2>
-                        <p><strong>Card Type:</strong> {reservationDetails.cardType}</p>
-                        <p><strong>Card Number:</strong> {reservationDetails.cardNumber}</p>
-                        <p><strong>Card Year:</strong> {reservationDetails.cardYear}</p>
-                        <p><strong>Card Month:</strong> {reservationDetails.cardMonth}</p>
+                        <p><strong>Card Type:</strong> {reservationDetails.cardTypeTicket}</p>
+                        <p><strong>Card Number:</strong> {reservationDetails.cardNumberTicket}</p>
+                        <p><strong>Card Year:</strong> {reservationDetails.cardYearTicket}</p>
+                        <p><strong>Card Month:</strong> {reservationDetails.cardMonthTicket}</p>
                                      
                     
                     </div>

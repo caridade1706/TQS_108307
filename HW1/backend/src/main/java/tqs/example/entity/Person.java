@@ -39,59 +39,59 @@ public class Person {
     private String city;
 
 
-    public int getId() {
+    public int getIdPerson() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setIdPerson(int id) {
         this.id = id;
     }
 
-    public String getName() {
+    public String getNamePerson() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setNamePerson(String name) {
         this.name = name;
     }
 
-    public String getEmail() {
+    public String getEmailPerson() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmailPerson(String email) {
         this.email = email;
     }
 
-    public String getPhone() {
+    public String getPhonePerson() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhonePerson(String phone) {
         this.phone = phone;
     }
 
-    public String getAddress() {
+    public String getAddressPerson() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddressPerson(String address) {
         this.address = address;
     }
 
-    public String getZip() {
+    public String getZipPerson() {
         return zip;
     }
 
-    public void setZip(String zip) {
+    public void setZipPerson(String zip) {
         this.zip = zip;
     }
 
-    public String getCity() {
+    public String getCityPerson() {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCityPerson(String city) {
         this.city = city;
     }
 

@@ -20,30 +20,30 @@ class TicketDtoTest {
         assertNotNull(ticket);
 
         ticket.setRouteid(0);
-        ticket.setNameDTO("John Doe");
-        ticket.setEmailDTO("john@email.com");
-        ticket.setPhoneDTO("123456789");
-        ticket.setAddressDTO("Rua do ISEP");
-        ticket.setZipDTO("4200-072");
-        ticket.setCityDTO("Porto");
-        ticket.setCardTypeDTO("Visa");
-        ticket.setCardNumberDTO(123456789);
-        ticket.setCardMonthDTO(12);
-        ticket.setCardYearDTO(2023);
-        ticket.setCardCvvDTO(123);
+        ticket.setName("John Doe");
+        ticket.setEmail("john@email.com");
+        ticket.setPhone("123456789");
+        ticket.setAddress("Rua do ISEP");
+        ticket.setZip("4200-072");
+        ticket.setCity("Porto");
+        ticket.setCardType("Visa");
+        ticket.setCardNumber(123456789);
+        ticket.setCardMonth(12);
+        ticket.setCardYear(2023);
+        ticket.setCardCvv(123);
 
         assertEquals(0, ticket.getRouteid());
-        assertEquals("John Doe", ticket.getNameDTO());
-        assertEquals("john@email.com", ticket.getEmailDTO());
-        assertEquals("123456789", ticket.getPhoneDTO());
-        assertEquals("Rua do ISEP", ticket.getAddressDTO());
-        assertEquals("4200-072", ticket.getZipDTO());
-        assertEquals("Porto", ticket.getCityDTO());
-        assertEquals("Visa", ticket.getCardTypeDTO());
-        assertEquals(123456789, ticket.getCardNumberDTO());
-        assertEquals(12, ticket.getCardMonthDTO());
-        assertEquals(2023, ticket.getCardYearDTO());
-        assertEquals(123, ticket.getCardCvvDTO());
+        assertEquals("John Doe", ticket.getName());
+        assertEquals("john@email.com", ticket.getEmail());
+        assertEquals("123456789", ticket.getPhone());
+        assertEquals("Rua do ISEP", ticket.getAddress());
+        assertEquals("4200-072", ticket.getZip());
+        assertEquals("Porto", ticket.getCity());
+        assertEquals("Visa", ticket.getCardType());
+        assertEquals(123456789, ticket.getCardNumber());
+        assertEquals(12, ticket.getCardMonth());
+        assertEquals(2023, ticket.getCardYear());
+        assertEquals(123, ticket.getCardCvv());
     }   
     
     @Test
@@ -54,16 +54,16 @@ class TicketDtoTest {
                 "Visa", 123456789, 12, 2023, 123);
         
         assertEquals(0, ticket.getRouteid());
-        assertEquals("John Doe", ticket.getNameDTO());
-        assertEquals("john@email.com", ticket.getEmailDTO());
-        assertEquals("123456789", ticket.getPhoneDTO());
-        assertEquals("Rua do ISEP", ticket.getAddressDTO());
-        assertEquals("4200-072", ticket.getZipDTO());
-        assertEquals("Porto", ticket.getCityDTO());
-        assertEquals("Visa", ticket.getCardTypeDTO());
-        assertEquals(123456789, ticket.getCardNumberDTO());
-        assertEquals(12, ticket.getCardMonthDTO());
-        assertEquals(2023, ticket.getCardYearDTO());
-        assertEquals(123, ticket.getCardCvvDTO());
+        assertEquals("John Doe", ticket.getName());
+        assertEquals("john@email.com", ticket.getEmail());
+        assertEquals("123456789", ticket.getPhone());
+        assertEquals("Rua do ISEP", ticket.getAddress());
+        assertEquals("4200-072", ticket.getZip());
+        assertEquals("Porto", ticket.getCity());
+        assertEquals("Visa", ticket.getCardType());
+        assertEquals(123456789, ticket.getCardNumber());
+        assertEquals(12, ticket.getCardMonth());
+        assertEquals(2023, ticket.getCardYear());
+        assertEquals(123, ticket.getCardCvv());
     }
 }

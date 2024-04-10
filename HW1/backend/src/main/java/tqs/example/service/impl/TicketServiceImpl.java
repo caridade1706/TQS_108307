@@ -46,25 +46,25 @@ public class TicketServiceImpl implements TicketService {
             
 
             Person person = new Person();
-            person.setName(ticketDTO.getNameDTO());
-            person.setEmail(ticketDTO.getEmailDTO());
-            person.setPhone(ticketDTO.getPhoneDTO());
-            person.setAddress(ticketDTO.getAddressDTO());
-            person.setZip(ticketDTO.getZipDTO());
-            person.setCity(ticketDTO.getCityDTO());
+            person.setNamePerson(ticketDTO.getName());
+            person.setEmailPerson(ticketDTO.getEmail());
+            person.setPhonePerson(ticketDTO.getPhone());
+            person.setAddressPerson(ticketDTO.getAddress());
+            person.setZipPerson(ticketDTO.getZip());
+            person.setCityPerson(ticketDTO.getCity());
             personRepository.save(person);
 
             Ticket ticket = new Ticket();
-            ticket.setId(generateTicketUID());
-            ticket.setPersonid(person.getId());
-            ticket.setPerson(person);
-            ticket.setRouteid(ticketDTO.getRouteid());
-            ticket.setRoute(routeRepository.findByRouteId(ticketDTO.getRouteid()));
-            ticket.setCardType(ticketDTO.getCardTypeDTO());
-            ticket.setCardNumber(ticketDTO.getCardNumberDTO());
-            ticket.setCardMonth(ticketDTO.getCardMonthDTO());
-            ticket.setCardYear(ticketDTO.getCardYearDTO());
-            ticket.setCardCvv(ticketDTO.getCardCvvDTO());
+            ticket.setIdTicket(generateTicketUID());
+            ticket.setPersonidTicket(person.getIdPerson());
+            ticket.setPersonTicket(person);
+            ticket.setRouteidTicket(ticketDTO.getRouteid());
+            ticket.setRouteTicket(routeRepository.findByRouteId(ticketDTO.getRouteid()));
+            ticket.setCardTypeTicket(ticketDTO.getCardType());
+            ticket.setCardNumberTicket(ticketDTO.getCardNumber());
+            ticket.setCardMonthTicket(ticketDTO.getCardMonth());
+            ticket.setCardYearTicket(ticketDTO.getCardYear());
+            ticket.setCardCvvTicket(ticketDTO.getCardCvv());
             ticketRespository.save(ticket);
 
             return ticket;
