@@ -42,6 +42,7 @@ public class TicketController {
 
     @PostMapping("/createreservation")
     public ResponseEntity<Object> reserveTicket(@RequestBody TicketDTO ticketDTO){
+        System.out.println(ticketDTO.getNameDTO());
         
         logger.info("Creating ticket");
         
