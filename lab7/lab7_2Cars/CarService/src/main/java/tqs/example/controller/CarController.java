@@ -1,11 +1,12 @@
-package tqs.example.Controller;
+package tqs.example.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tqs.example.Entity.Car;
-import tqs.example.Service.CarManagerService;
+
+import tqs.example.entities.Car;
+import tqs.example.service.CarManagerService;
 
 import java.util.List;
 import java.util.Optional;

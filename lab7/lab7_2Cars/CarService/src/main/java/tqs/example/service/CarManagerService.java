@@ -1,10 +1,11 @@
-package tqs.example.Service;
+package tqs.example.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tqs.example.Repository.CarRepository;
-import tqs.example.Entity.Car;
+
+import tqs.example.entities.Car;
+import tqs.example.repository.CarRepository;
 
 import java.util.List;
 import java.util.Optional;

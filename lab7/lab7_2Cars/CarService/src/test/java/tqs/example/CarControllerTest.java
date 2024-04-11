@@ -26,9 +26,9 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import tqs.example.Entity.Car;
-import tqs.example.Service.CarManagerService;
-import tqs.example.Controller.CarController;
+import tqs.example.controller.CarController;
+import tqs.example.entities.Car;
+import tqs.example.service.CarManagerService;
 
 @WebMvcTest(CarController.class)
 public class CarControllerTest {

@@ -1,7 +1,8 @@
-package tqs.example.Repository;
+package tqs.example.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import tqs.example.Entity.Car;
+
+import tqs.example.entities.Car;
 
 import java.util.List;
 import java.util.Optional;

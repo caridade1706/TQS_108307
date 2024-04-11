@@ -25,9 +25,9 @@ import java.util.Optional;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.is;
 
-import tqs.example.Controller.CarController;
-import tqs.example.Entity.Car;
-import tqs.example.Service.CarManagerService;
+import tqs.example.controller.CarController;
+import tqs.example.entities.Car;
+import tqs.example.service.CarManagerService;
 
 @WebMvcTest(CarController.class)
 public class RESTAssureTest {

@@ -1,4 +1,4 @@
-package tqs.example.Entity;
+package tqs.example.entities;
 
 import jakarta.persistence.*;
 
